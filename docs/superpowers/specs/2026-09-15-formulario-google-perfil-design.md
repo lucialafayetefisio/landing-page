@@ -16,6 +16,16 @@ O formulário não será usado para coletar dados de pacientes. Seu propósito �
    - uma planilha vinculada às respostas;
    - registros no log com as URLs de edição, preenchimento e respostas.
 
+## Recursos criados
+
+O formulário e a planilha de respostas foram gerados em 15 de setembro de 2026.
+
+- **Edição do formulário (uso administrativo):** [Abrir formulário no modo de edição](https://docs.google.com/forms/d/1oXAJGc2bt_fUMuoj5Dr6XEreUONlvmX5cFjMUfNiWrY/edit)
+- **Preenchimento pela Lúcia:** [Abrir formulário para preenchimento](https://docs.google.com/forms/d/e/1FAIpQLSdfzfNfI-TJ9TvDi_BxWp9EmapmSokEdZeNeWB2j_pRllYuJg/viewform)
+- **Planilha de respostas (uso administrativo):** [Abrir planilha de respostas](https://docs.google.com/spreadsheets/d/1lFsm3SluSaxOZXBTGHfiK9f3--8mA7Df9I3muLxFoLY/edit)
+
+O link de preenchimento é o único que deve ser enviado à Lúcia. Os links de edição e da planilha devem permanecer restritos às pessoas responsáveis pela criação e gestão do Perfil da Empresa no Google.
+
 ## Público e contexto
 
 O formulário será respondido somente por Lúcia Lafayete, fisioterapeuta autônoma com foco em Osteopatia. Ela atende adultos no Leblon e também realiza atendimentos domiciliares mediante agendamento pelo WhatsApp.
