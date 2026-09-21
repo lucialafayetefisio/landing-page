@@ -11,6 +11,8 @@ const TEL = "tel:+5521972796543";
 // Leblon, RJ — embed público sem API key
 const MAPS_EMBED =
   "https://maps.google.com/maps?q=Av.%20Ataulfo%20de%20Paiva%201175%2C%20Leblon%2C%20Rio%20de%20Janeiro&t=&z=16&ie=UTF8&iwloc=&output=embed";
+const MAPS_LINK =
+  "https://www.google.com/maps/search/?api=1&query=Av.%20Ataulfo%20de%20Paiva%2C%201175%2C%20sala%20205%2C%20Leblon%2C%20Rio%20de%20Janeiro";
 
 /* ─── FADE-IN ─── */
 function FadeIn({
@@ -293,15 +295,12 @@ export default function Home() {
 
         {/* Overlay MOBILE — escurece a base (texto legível) mantendo rosto/corpo no topo livre */}
         <div className="absolute inset-0 md:hidden" style={{
-          background: "linear-gradient(to top, rgba(13,90,99,0.9) 0%, rgba(13,90,99,0.5) 42%, transparent 70%)",
+          background: "linear-gradient(to top, rgba(13,90,99,0.72) 0%, rgba(13,90,99,0.28) 38%, transparent 62%)",
         }} aria-hidden />
 
         {/* Overlay DESKTOP — escuro à esquerda (texto), transparente à direita (foto) */}
         <div className="hidden md:block absolute inset-0" style={{
-          background: [
-            "linear-gradient(to right, rgba(13,90,99,0.92) 0%, rgba(13,90,99,0.72) 42%, rgba(13,90,99,0.25) 70%, transparent 92%)",
-            "linear-gradient(to top, rgba(13,90,99,0.75) 0%, rgba(13,90,99,0.2) 40%)",
-          ].join(", "),
+          background: "linear-gradient(to right, rgba(13,90,99,0.74) 0%, rgba(13,90,99,0.48) 36%, rgba(13,90,99,0.1) 62%, transparent 78%)",
         }} aria-hidden />
 
         {/* Conteúdo — texto sobreposto no rodapé (mobile) e à esquerda (desktop), tudo visível na 1ª dobra */}
@@ -312,10 +311,6 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             className="max-w-lg text-left">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] mb-3 text-white/85">
-              Fisioterapia · Osteopatia · Pilates
-            </p>
-
             <h1 className="hero-display-name text-5xl md:text-7xl font-semibold leading-[0.88]
               tracking-[-0.035em] mb-5 text-white text-wrap-balance">
               <span className="block text-xl md:text-2xl font-medium italic tracking-normal leading-none mb-2 text-white/90">
@@ -326,11 +321,8 @@ export default function Home() {
             </h1>
 
             <p className="text-base md:text-lg text-white leading-relaxed mb-5">
-                Fisioterapeuta especializada em{" "}
-                <strong className="text-white">Osteopatia</strong>.
-                Consultório no{" "}
-                <strong className="text-white">Leblon</strong>, Rio de Janeiro.
-              </p>
+              Consultório no Leblon, Rio de Janeiro.
+            </p>
 
             <div className="flex flex-row gap-2 md:gap-3">
               <motion.a
@@ -351,13 +343,6 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-
-        {/* Badge flutuante — desktop only */}
-        <div className="absolute bottom-6 right-6 hidden md:flex items-center gap-3
-          bg-white/15 backdrop-blur-sm border border-white/25 rounded-2xl px-5 py-3">
-          <div className="w-2 h-2 rounded-full bg-[#25D366]" />
-          <p className="text-white text-xs font-medium">Agendamento exclusivo pelo WhatsApp</p>
-        </div>
       </section>
 
 
@@ -372,9 +357,7 @@ export default function Home() {
               Serviços
             </h2>
             <p className="text-[#69727d] text-center text-sm md:text-base max-w-xl mx-auto mb-12">
-              Recursos terapêuticos definidos a partir de uma avaliação individual.
-              O trabalho é focado na investigação da causa raiz da dor e na
-              restauração do movimento e da funcionalidade.
+              Atendimento individual para cuidar da dor e recuperar movimentos.
             </p>
           </FadeIn>
 
@@ -552,7 +535,7 @@ export default function Home() {
               O que dizem os pacientes
             </h2>
             <p className="text-[#69727d] text-center text-sm max-w-xl mx-auto mb-10">
-              Veja como o atendimento da Dra. Lúcia tem ajudado pessoas a recuperarem qualidade de vida.
+              Relatos de quem já foi atendido.
             </p>
           </FadeIn>
 
@@ -632,7 +615,7 @@ export default function Home() {
               Onde atendo
             </h2>
             <p className="text-white/75 text-center text-sm max-w-xl mx-auto mb-12">
-              Atendimento no Leblon, exclusivamente com hora marcada.
+              Atendimento com hora marcada no Leblon.
             </p>
           </FadeIn>
 
@@ -725,8 +708,7 @@ export default function Home() {
               Agende sua avaliação
             </h2>
             <p className="text-[#69727d] text-center text-sm max-w-xl mx-auto mb-8">
-              Escolha o que você procura e abra direto o WhatsApp com a mensagem pronta.
-              Sem cadastro, sem espera.
+              Escolha o serviço e fale pelo WhatsApp.
             </p>
           </FadeIn>
 
@@ -851,8 +833,7 @@ export default function Home() {
               Pronto para agendar?
             </h2>
             <p className="text-[#69727d] text-center text-sm max-w-xl mx-auto mb-12">
-              Agendamento exclusivo pelo WhatsApp — sem formulários, sem espera.
-              Fale diretamente comigo.
+              Agende diretamente pelo WhatsApp.
             </p>
           </FadeIn>
 
@@ -874,7 +855,10 @@ export default function Home() {
 
             {/* Endereço */}
             <FadeIn delay={0.1}>
-              <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-100 shadow-sm">
+              <a href={MAPS_LINK} target="_blank" rel="noreferrer"
+                aria-label="Abrir localização do consultório no Google Maps"
+                className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-100
+                  shadow-sm hover:shadow-md hover:border-[#cc3366]/20 transition-all active:scale-98">
                 <div className="w-12 h-12 rounded-full bg-[#f5f0eb] flex items-center justify-center">
                   <Image src="/images/building.png" alt="Endereço" width={28} height={28}
                     className="w-7 h-7 object-contain" />
@@ -883,7 +867,7 @@ export default function Home() {
                   <p className="font-bold text-[#222] text-sm">Consultório · Inspirit Fisio</p>
                   <p className="text-[#69727d] text-xs mt-0.5">Av. Ataulfo de Paiva, 1175/205</p>
                 </div>
-              </div>
+              </a>
             </FadeIn>
 
             {/* Instagram */}
