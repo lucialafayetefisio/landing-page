@@ -450,9 +450,10 @@ export default function Home() {
             <FadeIn delay={0.05} className="flex-1">
               <div className="space-y-4 text-[#4a4a4a] text-sm md:text-base leading-relaxed">
                 <p>
-                  Sou fisioterapeuta, com formação em Osteopatia, e trabalho com
-                  uma abordagem individualizada para cuidar da dor, recuperar
-                  movimentos e melhorar a funcionalidade.
+                  Sou fisioterapeuta e osteopata em formação pela Escola de
+                  Osteopatia de Madrid (EOM). Trabalho com uma abordagem
+                  individualizada para cuidar de disfunções, recuperar movimentos
+                  e melhorar a funcionalidade.
                 </p>
                 <p>
                   Meu atendimento integra Fisioterapia, Osteopatia, Reabilitação
@@ -908,7 +909,7 @@ export default function Home() {
                 style={{ filter: 'brightness(0) invert(1) drop-shadow(0 2px 4px rgba(255, 255, 255, 0.1))' }}
               />
               <p className="text-white/65 text-xs text-center md:text-left leading-relaxed">
-                Fisioterapeuta especializada em Osteopatia.
+                Fisioterapeuta e osteopata em formação pela EOM.
                 Atendimento personalizado no Leblon.
               </p>
               <div className="flex gap-3">

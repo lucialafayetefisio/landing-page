@@ -63,7 +63,7 @@ const localBusinessJsonLd = {
   url: "https://lucialafayete.com.br",
   telephone: WHATSAPP_DISPLAY,
   email: "contato@lucialafayete.com.br",
-  medicalSpecialty: ["Physiotherapy", "Osteopathic"],
+  medicalSpecialty: "Physiotherapy",
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",
@@ -85,10 +85,7 @@ const localBusinessJsonLd = {
   founder: {
     "@type": "Person",
     name: "Dra. Lúcia Lafayete",
-    alumniOf: {
-      "@type": "Organization",
-      name: "Escola de Osteopatia de Madrid (EOM)",
-    },
+    description: "Fisioterapeuta e osteopata em formação pela Escola de Osteopatia de Madrid (EOM).",
   },
   knowsAbout: ["Osteopatia", "Fisioterapia", "Pilates", "Ondas de Choque"],
 };
