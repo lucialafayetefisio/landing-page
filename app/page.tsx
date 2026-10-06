@@ -357,7 +357,7 @@ export default function Home() {
               Serviços
             </h2>
             <p className="text-[#69727d] text-center text-sm md:text-base max-w-xl mx-auto mb-12">
-              Atendimento individual para cuidar da dor e recuperar movimentos.
+              Atendimento individual para tratar as disfunções e recuperar movimentos.
             </p>
           </FadeIn>
 
