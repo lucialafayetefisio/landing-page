@@ -452,7 +452,7 @@ export default function Home() {
                 <p>
                   Sou fisioterapeuta e osteopata em formação pela Escola de
                   Osteopatia de Madrid (EOM). Trabalho com uma abordagem
-                  individualizada para cuidar de disfunções, recuperar movimentos
+                  individualizada para tratar as disfunções, recuperar movimentos
                   e melhorar a funcionalidade.
                 </p>
                 <p>
